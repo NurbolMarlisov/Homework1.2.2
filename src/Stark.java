@@ -1,6 +1,6 @@
 public class Stark {
-    private int helth;
-    private int damage;
+    private Integer helth;
+    private Integer damage;
     private Weapon superweapon;
     private Stark stark;
 
