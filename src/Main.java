@@ -10,8 +10,8 @@ public class Main {
         Betman objectC = new Betman(stark,200,20,Weapon.WEAPON," Lick Smerti ");
 
         System.out.println(objectA.printInfo()); //Перезаписываемый первый
-        System.out.println(objectB.printInfo());//Перезаписываемый второй
-        System.out.println(objectC.printInfo());
+        System.out.println(objectB.printInfo());//Перезаписываемый
+        System.out.println(objectC.printInfo());                    //второй
         System.out.println(objectA.printInfo(" frost")); //Не перезаписываемый
 
     }
