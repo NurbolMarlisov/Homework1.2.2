@@ -3,13 +3,9 @@ public class Thor extends Stark {
 
 
 
-
-
-
-
-    public Thor(Stark stark,int helth, int damage, Weapon superweapon, String power) {
-        super(helth, damage, superweapon,stark);
-        super.getStark(helth,damage,superweapon);
+    public Thor(int helth, int damage, Weapon superweapon, String power) {
+        super(helth, damage, superweapon);
+       // super.getStark(helth,damage,superweapon);
         this.power = power;
     }
 
@@ -25,7 +21,6 @@ public class Thor extends Stark {
 
 
 
-
     public String printInfo() {
         return " Hp Stark: " + getHelth() +" Stark damage: " + getDamage()+ " Stark weapon: "+getSuperweapon() ;
        // ПЕРЕЗАПИСЫВАЕМЫЙ МЕТОД
@@ -37,5 +32,12 @@ public class Thor extends Stark {
       //НЕ ПЕРЕЗАПИСЫВАЕМЫЙ МЕТОД
 
     }
+
+    @Override
+    public String getStark(int helth, int damage, Weapon superweapon) {
+
+        return  " Batman Hp: " + getHelth() +" Batman damage: " + getDamage()+ " Batman superpower: "+getSuperweapon()+ this.power;
     }
+
+}
 

@@ -1,22 +1,11 @@
-public class Stark {
+public abstract class Stark {
     private Integer helth;
     private Integer damage;
     private Weapon superweapon;
-    private Stark stark;
-
-    public Stark(int helth, int damage, Weapon superweapon) {
-    }
-
-    public Stark getStark(int helth, int damage, Weapon superweapon) {
-        return stark;
-    }
-
-    public Stark(
-
-    ) {
 
 
-    }
+    public abstract String getStark(int helth, int damage, Weapon superweapon);
+
 
     public int getHelth() {
         return helth;
@@ -26,15 +15,15 @@ public class Stark {
         return damage;
     }
 
-    public Weapon getSuperweapon() {
+     public Weapon getSuperweapon() {
         return superweapon;
     }
 
-    public Stark(int helth, int damage, Weapon superweapon,Stark stark) {
+    public Stark(int helth, int damage, Weapon superweapon) {
         this.helth = helth;
         this.damage = damage;
         this.superweapon = superweapon;
-        this.stark = stark;
+
     }
 
 
